@@ -19,8 +19,15 @@
         </nav>
 
         {% block body %}{% endblock %}
-        <footer class="mt-5 p-3 text-center">
-            Made with <i style="color: #FA1;" class="fa fa-heart"></i> by <a style="color: #FB1; text-decoration: underline;" >Agnieszka</a>
+        <footer class="fixed-bottom">
+            <div class="jumbotron-random-dreamer pt-3">
+                <div class="container mx-autorozwiązanie problemów z komitami do g">
+                    <div class="col mx-auto d-flex justify-content-between">
+                        <p class="lead pr-5">Wylosuj szczęśliwego marzyciela, któremu spełni się dziś jedno z marzeń, np. umyje się drugi.</p>
+                        <button class="btn btn-light pl-5">Wylosuj szczęśliwego marzyciela</button>
+                    </div>
+                </div>
+            </div>
         </footer>
         {% block javascripts %}
             {{ encore_entry_script_tags('app') }}
