@@ -27,4 +27,15 @@ class CommentController extends AbstractController
 
         return $this->json(['votes' => $currentVoteCount]);
     }
+
+    /**
+     * @Route("/rand/dreamer", methods="POST")
+     */
+    public function randDreamer() {
+        $dreamers_array = array("Janek", "Julka");
+        $rand_keys = array_rand($dreamers_array, 1);
+        $winningDreamer = $dreamers_array[$rand_keys[0]];
+
+        return $this->json(['dreamer' => $winningDreamer]);
+    }
 }

@@ -8,11 +8,6 @@
                 <h1 class="display-4">O czym myślisz?</h1>
                 <p class="lead">Podziel się swoimi marzeniami!</p>
             </div>
-            <div class="col">
-                <button class="btn btn-light">Marzenia spełnione</button>
-                <button class="btn btn-light">Marzenia niespełnione</button>
-                <button class="btn btn-light">Wybierz marzenia</button>
-            </div>
         </div>
     </div>
 </div>
@@ -22,28 +17,28 @@
             <button class="btn btn-question">Dodaj marzenie</button>
         </div>
     </div>
-    <div class="row" data-spy="scroll">
-        <div class="col-12">
+    <div class="row pb-10" data-spy="scroll">
+        <div class="col-12 mb-5">
             <div style="box-shadow: 2px 3px 9px 4px rgba(0,0,0,0.04);">
                 <div class="q-container p-4">
                     <div class="row mx-auto">
-                        <div class="col-2 text-center">
-                            <img src="{{ asset('images/eagle_in_flight.jpg') }}" class="rounded" width="150" height="150"  alt="Tisha avatar">
-                            <div class="d-block mt-3 vote-arrows">
+                        <div class="col-2">
+                            <img src="{{ asset('images/eagle_in_flight.jpg') }}" class="rounded" width="150" height="150"  alt="Janek avatar">
+                            {# <div class="d-block mt-3 vote-arrows">
                                 <a class="vote-up" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
                                 <a class="vote-down" href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
-                            </div>
+                            </div> #}
                         </div>
                         <div class="col">
                             <div class="row d-flex justify-content-between">
                                 <a class="q-title mt-1 ml-3" href="{{ path('app_question_show', { slug: 'Chciałbym-latać' }) }}"><h2>Chciałbym latać</h2></a>
-                                <button class="btn btn-dream-made mt-1 mb-3 mr-3">Zrealizowane</button>
+                                <button class="btn btn-dream-made mt-1 mb-3 mr-3">Zrealizowane<i class="fas fa-check-double pl-2"></i></button>
                             </div>
                             <div class="q-display p-3">
                                 <i class="fa fa-quote-left mr-3"></i>
                                 <p class="d-inline">Ciągle odlatuję (we śnie). Chciałbym spróbować w realu.</p>
                                 <div class="row mx-auto pt-3">
-                                    <img src="{{ asset('images/magic-photo.png') }}" class="circle-rounded" width="35" height="35"  alt="Tisha avatar">
+                                    <img src="{{ asset('images/magic-photo.png') }}" class="circle-rounded" width="35" height="35"  alt="Janek image">
                                     <p class="pl-1 pt-2"><strong>Janek</strong></p>
                                 </div>
                             </div>
@@ -51,40 +46,44 @@
                     </div>
                 </div>
                 <a class="answer-link" href="{{ path('app_question_show', { slug: 'Chciałbym-latać' }) }}" style="color: #fff;">
-                    <p class="q-display-response text-center p-3">
-                        <i class="fa fa-magic magic-wand"></i> 6 odpowiedzi
+                    <p class="q-display-response text-center p-3" style="background-color:rgb(68, 2, 122);">
+                        <i class="fa fa-magic magic-wand"></i> 3 odpowiedzi
                     </p>
                 </a>
             </div>
         </div>
 
-        <div class="col-12 mt-3">
-            <div class="q-container p-4">
-                <div class="row">
-                    <div class="col-2 text-center">
-                        <img src="{{ asset('images/tisha.png') }}" width="100" height="100"  alt="Jerry avatar">
-                        <div class="d-block mt-3 vote-arrows">
-                            <a class="vote-up" href="#"><i class="far fa-arrow-alt-circle-up"></i></a>
-                            <a class="vote-down" href="#"><i class="far fa-arrow-alt-circle-down"></i></a>
+        <div class="col-12 mb-5">
+            <div style="box-shadow: 2px 3px 9px 4px rgba(0,0,0,0.04);">
+                <div class="q-container p-4">
+                    <div class="row mx-auto">
+                        <div class="col-2">
+                            <img src="{{ asset('images/kot_z_mysza.jpg') }}" class="rounded" width="150" height="150"  alt="Julka avatar">
                         </div>
-                    </div>
-                    <div class="col">
-                        <a class="q-title" href="{{ path('app_question_show', { slug: 'Być-czy-nie-być-...-KOTEM' }) }}"><h2>Być czy nie być ... KOTEM</h2></a>
-                        <button class="btn btn-dream-made">Zrealizowane</button>
-                        <div class="q-display p-3">
-                            <i class="fa fa-quote-left mr-3"></i>
-                            <p class="d-inline" style="maxlength: 50px">Jestem na dobrej drodze, żeby stać się kotem, ale nie wiem jeszcze jak później wrócić do postaci ludzkiej ... a może nie wracać ... Kot domowy (Felis catus[1][3], również Felis silvestris catus) – udomowiony gatunek ssaka z rzędu drapieżnych z rodziny kotowatych. Koty zostały udomowione około 9500 lat temu[4] i są obecnie najpopularniejszymi zwierzętami domowymi na świecie[5]. Gatunek ten prawdopodobnie pochodzi od kota nubijskiego, przy czym w Europie krzyżował się ze żbikiem. Jest uznawany za gatunek inwazyjny[6]. </p>
-                            <p class="pt-4"><strong>--Julka</strong></p>
+                        <div class="col">
+                            <div class="row d-flex justify-content-between">
+                                <a class="q-title mt-1 ml-3" href="{{ path('app_question_show', { slug: 'Być-czy-nie-być-...-KOTEM' }) }}"><h2>Być czy nie być ... kotem</h2></a>
+                                <button class="btn btn-dream-made mt-1 mb-3 mr-3">Zrealizowane<i class="fas fa-check-double pl-2"></i></button>
+                            </div>
+                            <div class="q-display p-3">
+                                <i class="fa fa-quote-left mr-3"></i>
+                                <p class="d-inline">Jestem na dobrej drodze, żeby stać się kotem, ale nie wiem jeszcze jak później wrócić do postaci ludzkiej ... a może nie wracać ... </p>
+                                <div class="row mx-auto pt-3">
+                                    <img src="{{ asset('images/tisha.png') }}" class="circle-rounded" width="35" height="35"  alt="Julka image">
+                                    <p class="pl-1 pt-2"><strong>Julka</strong></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <a class="answer-link" href="{{ path('app_question_show', { slug: 'Być-czy-nie-być-...-KOTEM' }) }}" style="color: #fff;">
+                    <p class="q-display-response text-center p-3" style="background-color:rgb(68, 2, 122);">
+                        <i class="fa fa-magic magic-wand"></i> 4 odpowiedzi
+                    </p>
+                </a>
             </div>
-            <a class="answer-link" href="{{ path('app_question_show', { slug: 'Być-czy-nie-być-...-KOTEM' }) }}" style="color: rgb(68, 2, 122);">
-                <p class="q-display-response text-center p-3">
-                    <i class="fa fa-magic magic-wand"></i> 15 odpowiedzi
-                </p>
-            </a>
         </div>
+
     </div>
 </div>
 {% endblock %}

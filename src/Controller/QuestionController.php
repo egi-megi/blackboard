@@ -40,4 +40,10 @@ class QuestionController extends AbstractController
             'answers' => $answers,
         ]);
     }
+
+    public function rand_dreamer() {
+        $dreamers_array = array("Janek", "Julka");
+        $rand_keys = array_rand($dreamers_array, 1);
+        return $dreamer = $dreamers_array[$rand_keys[0]];
+    }
 }

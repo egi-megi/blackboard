@@ -25,4 +25,18 @@ $container.find('a').on('click', function(e) {
     }).then(function(data) {
         $container.find('.js-vote-total').text(data.votes);
     });
+    print("dupa");
+});
+
+var $containerDreamer = $('.js-random-dreamer');
+$containerDreamer.find('a').on('click', function(e) {
+    e.preventDefault();
+    var $link = $(e.currentTarget);
+
+    $.ajax({
+        url: '/rand/dreamer',
+        method: 'POST'
+    }).then(function(data) {
+        $containerDreamer.find('.js-rand-dreamer').text(data.dreamer);
+    });
 });
