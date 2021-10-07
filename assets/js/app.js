@@ -25,7 +25,6 @@ $container.find('a').on('click', function(e) {
     }).then(function(data) {
         $container.find('.js-vote-total').text(data.votes);
     });
-    print("dupa");
 });
 
 var $containerDreamer = $('.js-random-dreamer');
