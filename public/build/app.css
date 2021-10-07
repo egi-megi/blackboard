@@ -3,10 +3,22 @@ body {
     color: #444;
 }
 
+:root {
+    --violet-color:rgb(68, 2, 122);
+    --orange-color:rgb(223, 153, 4);
+}
+
 .jumbotron-img {
-    background: rgb(237,116,88);
-    background: linear-gradient(302deg, rgba(237,116,88,1) 16%, rgba(51,61,81,1) 97%);
+    background: var(--violet-color);
+    background: linear-gradient(302deg, var(--violet-color), var(--orange-color));
     color: #fff;
+}
+
+.jumbotron-random-dreamer {
+    background: var(--violet-color);
+    background: linear-gradient(302deg, var(--orange-color), var(--violet-color));
+    color: #fff;
+    height:80px;
 }
 
 .q-container {
@@ -18,7 +30,7 @@ body {
 .q-container-show {
     border-top-right-radius: .25rem;
     border-top-left-radius: .25rem;
-    background-color: #ED7458 ;
+    background-color: var(--violet-color) ;
 }
 
 .q-container img, .q-container-show img {
@@ -66,7 +78,7 @@ body {
 }
 
 .vote-arrows a {
-    color: #444;
+    color: var(--violet-color);
 }
 
 .vote-up:hover {
@@ -78,8 +90,8 @@ body {
 
 .btn-question {
   color: #FFFFFF;
-  background-color: #ED7458;
-  border-color: #D45B3F;
+  background-color: var(--orange-color);
+  border-color: var(--orange-color);
 }
 
 .btn-question:hover,
@@ -88,8 +100,8 @@ body {
 .btn-question.active,
 .open .dropdown-toggle.btn-question {
   color: #FFFFFF;
-  background-color: #D45B3F;
-  border-color: #D45B3F;
+  background-color: var(--orange-color);
+  border-color: var(--orange-color);
 }
 
 .btn-question:active,
@@ -113,13 +125,59 @@ fieldset[disabled] .btn-question:active,
 .btn-question.disabled.active,
 .btn-question[disabled].active,
 fieldset[disabled] .btn-question.active {
-  background-color: #ED7458;
-  border-color: #D45B3F;
+  background-color: var(--orange-color);
+  border-color: var(--orange-color);
 }
 
 .btn-question .badge {
-  color: #ED7458;
+  color: var(--orange-color);
   background-color: #FFFFFF;
+}
+
+.btn-dream-made {
+    color: #FFFFFF;
+    background-color: var(--violet-color);
+    border-color: var(--violet-color);
+}
+
+.btn-dream-made:hover,
+.btn-dream-made:focus,
+.btn-dream-made:active,
+.btn-dream-made.active,
+.open .dropdown-toggle.btn-question {
+color: #FFFFFF;
+background-color: var(--violet-color);
+border-color: var(--violet-color);
+}
+
+.btn-dream-made:active,
+.btn-dream-made.active,
+.open .dropdown-toggle.btn-dream-made {
+background-image: none;
+}
+
+.btn-dream-made.disabled,
+.btn-dream-made[disabled],
+fieldset[disabled] .btn-dream-made,
+.btn-dream-made.disabled:hover,
+.btn-dream-made[disabled]:hover,
+fieldset[disabled] .btn-dream-made:hover,
+.btn-dream-made.disabled:focus,
+.btn-dream-made[disabled]:focus,
+fieldset[disabled] .btn-dream-made:focus,
+.btn-dream-made.disabled:active,
+.btn-dream-made[disabled]:active,
+fieldset[disabled] .btn-dream-made:active,
+.btn-dream-made.disabled.active,
+.btn-dream-made[disabled].active,
+fieldset[disabled] .btn-dream-made.active {
+background-color: var(--violet-color);
+border-color: var(--violet-color);
+}
+
+.btn-dream-made .badge {
+color: var(--violet-color);
+background-color: #FFFFFF;
 }
 
 footer {
